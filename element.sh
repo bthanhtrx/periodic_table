@@ -16,7 +16,7 @@ else
 
   if [[ -z $QUERY_RESULT ]]
   then
-    echo -e "\nI could not find that element in the database."
+    echo -e "I could not find that element in the database."
   else
     echo $QUERY_RESULT | while IFS=' | ' read ATOMIC_NUMBER SYMBOL NAME MASS MELTING_POINT BOILING_POINT TYPE
     do
